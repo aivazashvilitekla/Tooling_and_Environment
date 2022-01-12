@@ -1,10 +1,10 @@
-import { isFriday, isWednesday } from "date-fns";
-import { log } from "./logger.js";
-import { currentDate } from "./utils.js";
+import { isFriday, isWednesday } from 'date-fns';
+import { log } from './logger.js';
+import { currentDate } from './utils.js';
 
-console.log(3 ?? 5);
+// console.log(3 ?? 5);
 
-log("my message");
+log('my message');
 currentDate();
 
 console.log('is friday? ', isFriday(new Date()));
