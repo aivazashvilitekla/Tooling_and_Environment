@@ -9,3 +9,5 @@ currentDate();
 
 console.log('is friday? ', isFriday(new Date()));
 console.log('is wednesday? ', isWednesday(new Date()));
+
+var a = 5;
