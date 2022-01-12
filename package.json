@@ -1,0 +1,11 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "JS ENV HM",
+  "scripts": {},
+  "author": "Tekla",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.2"
+  }
+}
