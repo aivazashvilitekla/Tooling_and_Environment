@@ -8,7 +8,8 @@
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel start localtunnel",
     "preshare": "node scripts/startMessage.js",
-    "build": "webpack"
+    "build": "webpack",
+    "format:all": "prettier --write \"src/**/*.js\""
   },
   "author": "Tekla",
   "license": "ISC",
@@ -26,5 +27,9 @@
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-middleware": "^5.3.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "prettier": "^2.5.1"
   }
 }
