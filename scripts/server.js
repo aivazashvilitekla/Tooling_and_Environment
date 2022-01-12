@@ -1,11 +1,20 @@
-const express = require("express");
-const path = require("path");
-const open = require("open");
+import express from "express";
+import path from "path";
+import open from "open";
+
+import webpack from "webpack";
+import config from "../webpack.config.js";
+import webpackDevMiddleware from 'webpack-dev-middleware';
 
 const port = 3000;
 const app = express();
 
-app.use(express.static('src'));
+const compiler = webpack(config);
+app.use(
+    webpackDevMiddleware(compiler)
+);
+
+app.use(express.static("src"));
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../src/index.html"));
