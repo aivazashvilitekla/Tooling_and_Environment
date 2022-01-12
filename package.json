@@ -2,10 +2,14 @@
   "name": "homework",
   "version": "1.0.0",
   "description": "JS ENV HM",
-  "scripts": {},
+  "scripts": {
+    "start": "node scripts/server.js",
+    "localtunnel": "lt --port 3000"
+  },
   "author": "Tekla",
   "license": "ISC",
   "devDependencies": {
+    "localtunnel": "^2.0.2",
     "express": "^4.17.2"
   },
   "dependencies": {
